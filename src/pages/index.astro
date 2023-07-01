@@ -1,44 +1,105 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import MainHeader from '../components/MainHeader.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import MainHeader from "../components/MainHeader.astro";
 ---
 
 <Layout title="VPCI Robotics">
 	<main class="container max-w-none">
-		<MainHeader/>
-		<div class="mx-4 instructions text-center text-white hover:text-black card-hover blue">
-			<h2 class="text-4xl font-semibold p-2">Welcome</h2>
-			<p class="opacity-80">
-				Welcome to Team 4914, the Victoria Park Panthers. We are a student run FIRST Robotics <br> Competition (FRC) team at Victoria Park C.I. run by 3 mentors and over 100 students. 
+		<MainHeader />
+		<!-- Welcome -->
+		<div
+			class="mt-6 mx-5 instructions text-center text-white hover:text-black card-hover blue"
+		>
+			<h2 class="text-5xl font-semibold p-2">Welcome</h2>
+			<p class="opacity-80 md:w-5/12 w-10/12 mx-auto">
+				Welcome to Team 4914, the Victoria Park Panthers. We are a
+				student run FIRST Robotics Competition (FRC) team at Victoria
+				Park C.I. run by 3 mentors and over 100 students.
 			</p>
-		<div>
+		</div>
+
+		<section class="flex justify-around mx-5">
+			<!-- Our Mission -->
+			<Card
+				title="OUR MISSION"
+				body="Team 4914's mission is to stimulate students and inspire a new generation of students into STEM through hands-on learning and an environment for creativity and confidence to grow."
+			/>
+
+			<!-- Our Goals -->
+			<Card
+				title="OUR GOALS"
+				body="The primary goal of 4914 is the extension of STEM into the community, and helping students understand the importance of STEM. Beyond that, we hope to propagate the values of FIRST & Team 4914 into the community, provide a comfortable enviroment for students to learn about STEM, and create strong bonds, both winthin our team members, and with the general community."
+			/>
+
+			<!-- Our History -->
+			<Card
+				title="OUR HISTORY"
+				body='Starting in 2014, Team 4914 “Panthers” was established at Victoria Park Collegiate Institute with students from the school and several teacher mentors. Our FIRST robotics team’s first year started off with “Aerial Assist”, where we received Rookie All Star Award and Imagery Award at our first event. Thereafter, the team progressed onto the International Stage at St.Louis, Missouri, all within a year of being founded. Since then, we have won 11 FRC awards and grown in size and diversity. Team 4914 has always had the same goals in mind since the start, and through the help of our dedicated members, has refined & polished a clear system to engage students & educate them about STEM while also providing a fun and engaging competition background for them to test their new skills and grow.'
+			/>
+		</section>
+
+		<!-- Core Values -->
+		<div class="instructions mx-5 text-center">
+			<h2 class="text-5xl font-semibold">Core Values</h2>
+			<div class="flex gap-x-4 mt-12">
+				<div class="w-full md:w-1/2 lg:3/12">
+					<img
+						src="https://cdn.discordapp.com/attachments/1122723830973075506/1124779114327461938/D0ViRvVA1ibZ_VYhi40rmL5qecILq8Yl0ixXC84fib1jDzKHjL1lBmDl1SStv6wSPYUHhHPP8U88Qybgx_-PNyfK-YP0khR-gOJGm7WT0dp2G7nXw1280.png"
+						alt="Image of Robotics Team Member pointing at camera"
+					/>
+					<p class="text-2xl text-red-800 mt-3">SPIRITED</p>
+				</div>
+				<div class="w-full md:w-1/2 lg:3/12">
+					<img
+						src="https://cdn.discordapp.com/attachments/1122723830973075506/1124779128818769970/2_d5E8VPaEk95gJW5bqZdU25slAMu6ptPJZTSZqOybox287Wz2samhmFSFQZeVpk1nW7O6XoTfSmLeUR6UJDYP_DvufooNGzu6RB99ttl4PGQtnpw1280.png"
+						alt="Image of Robotics Team Members working on the robot as a mentor watches"
+					/>
+					<p class="text-2xl text-red-800 mt-3">TEAM-ORIENTED</p>
+				</div>
+				<div class="w-full md:w-1/2 lg:3/12">
+					<img
+						src="https://cdn.discordapp.com/attachments/1122723830973075506/1124779150255865856/PJb26LSLXD8sJkzanfN-t5sM44NGsGx_Slt4pduNcULOw-eeNDdYPrxfDpxqN-3qdWJnbd1SjFWMRa8MPIuJ65o9RVR4soFjHiZH1N_8vZrrqYBrw1280.png"
+						alt="Image of Robotics Team Member shaking hand"
+					/>
+					<p class="text-2xl text-red-800 mt-3">EMPATHETIC</p>
+				</div>
+				<div class="w-full md:w-1/2 lg:3/12">
+					<img
+						src="https://cdn.discordapp.com/attachments/1122723830973075506/1124779221970059274/S20AXkr7RAsCk1ZeI7Xed9b8PUIJv0BceQ5GIOO-Td3fRtVdZBsbMhYAlmUsdOwz8ZIlMQawyU-xvUPhqG_6P19lcx1ddlCm_MWABO06Zl53Ejgxw1280.png"
+						alt="Image of Robotics Team Member working on robot"
+					/>
+					<p class="text-2xl text-red-800 mt-3">METHODICAL</p>
+				</div>
+			</div>
+		</div>
 	</main>
 </Layout>
 
 <style>
-	/* main {
-		padding: 1.5rem;
-	} */
 	.card-hover {
 		border: none;
 		background-size: 300% 100%;
-		moz-transition: all .6s ease-in-out;
-		-o-transition: all .6s ease-in-out;
-		-webkit-transition: all .6s ease-in-out;
-		transition: all .6s ease-in-out;
+		moz-transition: all 0.6s ease-in-out;
+		-o-transition: all 0.6s ease-in-out;
+		-webkit-transition: all 0.6s ease-in-out;
+		transition: all 0.6s ease-in-out;
 	}
 	.card-hover:hover {
 		background-position: 100% 0;
-		moz-transition: all .6s ease-in-out;
-		-o-transition: all .6s ease-in-out;
-		-webkit-transition: all .6s ease-in-out;
-		transition: all .6s ease-in-out;
+		moz-transition: all 0.6s ease-in-out;
+		-o-transition: all 0.6s ease-in-out;
+		-webkit-transition: all 0.6s ease-in-out;
+		transition: all 0.6s ease-in-out;
 		box-shadow: none;
 	}
 	.card-hover.blue {
-		background-image:linear-gradient(to right, rgb(0, 0, 0) 50%, rgb(225, 234, 238) 50%);
-    	box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.75);
+		background-image: linear-gradient(
+			to right,
+			rgb(80, 98, 108) 50%,
+			rgb(225, 234, 238) 50%
+		);
+		box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.75);
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);

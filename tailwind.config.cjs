@@ -8,7 +8,11 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				
+				maroon: '#941414',
+				pantherYellow: '#F2C12E',
+				pantherOrange: '#F2B035',
+				pantherBrown: '#8C2703',
+				offWhite: '#F2F2F2',
 			},
 		},
 	},

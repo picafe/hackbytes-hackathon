@@ -2,9 +2,11 @@
 export interface Props {
 	title: string;
 	image: string;
+    tagline?: string; 
+    decoration?: 'underline' | 'no-underline';
 }
 
-const { title, image } = Astro.props;
+const { title, image, tagline, decoration='underline' } = Astro.props;
 ---
 <script define:vars={{ image }}>
     document.body.style.setProperty('--bg-img', 'url(' + image + ')');
@@ -13,9 +15,10 @@ const { title, image } = Astro.props;
 <header>
     <div class="container max-w-none bg-image p-5">
         <div>
-            <h1 class="md:text-8xl text-5xl text-white font-semibold text-center underline underline-offset-8 decoration-red-800 mt-32">
+            <h1 class:list={["md:text-8xl text-5xl text-white font-semibold text-center underline-offset-8 decoration-red-800 mt-32", decoration]}>
                  <span class="text-gradient"> {title} <span>
             </h1>
+            <h2 class="md:text-5xl text-3xl font-thin text-center text-white mt-3">{tagline}</h2>
         </div>
     </div>
 </header>
