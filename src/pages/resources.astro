@@ -1,11 +1,52 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import AltHeader from '../components/AltHeader.astro';
 ---
 
 <Layout title="Resources">
 	<main>
-		<h1>Resources</h1>
-		
+		<AltHeader 
+            title="Resources" 
+            bgGradient="linear-gradient(112.1deg, rgb(140, 20, 30) 21.4%, rgb(242, 193, 46) 70.2%)" 
+            subtitle="" 
+            image="https://cdn.discordapp.com/attachments/1122723830973075506/1124438470681706546/hgWG7-BFMNg9TCZwDlh0FHpiLvLoFd4jfgLIOQ3gJMwsSwKclRAADDTpsUBQpN65wiV-GAw16383.png"
+        />
+		<div class="text-center font-semibold mt-5">
+			<h2 class="text-4xl">First Resources</h2>
+			<div class="grid grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 gap-4 border m-6 text-center ">
+				<a href="https://www.firstinspires.org/resource-library">
+					<div class="flex justify-center items-center border rounded-lg hover:bg-blue-100 py-5">
+						<h2 class="text-lg font-bold text-gray-800 hover:text-blue-800">
+							General Resource Library
+						</h2>
+					</div>
+				</a>
+				<a href="https://www.firstinspires.org/resource-library/ftc/robot-building-resources">
+					<div class="flex justify-center items-center border rounded-lg hover:bg-blue-100  py-5">
+						<h2 class="text-lg font-bold text-gray-800 hover:text-blue-800">
+							Robot Building Resources
+						</h2>
+					</div>
+				</a>
+				<a href="https://www.firstinspires.org/resource-library/ftc/technology-information-and-resources">
+					<div class="flex justify-center items-center border rounded-lg hover:bg-blue-100 py-5">
+						<h2 class="text-lg font-bold text-gray-800 hover:text-blue-800">
+							Programming Resources
+						</h2>
+					</div>
+				</a>
+				<a href="https://www.firstinspires.org/resource-library/ftc/team-management-resources">
+					<div class="flex justify-center items-center border rounded-lg hover:bg-blue-100 py-5">
+						<h2 class="text-lg font-bold text-gray-800 hover:text-blue-800">
+							Team Management Resources
+						</h2>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div></div>
+		<div></div>
+		<div></div>
 	</main>
 </Layout>

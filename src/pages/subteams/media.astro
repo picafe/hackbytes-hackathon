@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Card from '../../components/Card.astro';
 import SubteamHeader from '../../components/SubteamHeader.astro';
+import Carousel from '../../components/Carousel.astro';
 ---
 
 <Layout title="Media">
@@ -9,11 +10,11 @@ import SubteamHeader from '../../components/SubteamHeader.astro';
 	<main class="max-w-6xl my-auto mx-auto">
 		<div class="mt-20 mb-10">
 			<div class="flex flex-row gap-10">
-				<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-center text-white">
-					insert image
+				<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-center text-white shadow-xl">
+					<img src = "https://cdn.discordapp.com/attachments/1122723830973075506/1124842276963766342/bZsojHwP1tvFAIV4jZ1dYuA8xg1lGnl7FDR-oydSsghEBxgI2BGZHGDdOMBOwH_6CvYi9LwLZt8NillCkxSbOGjIB5MEMGaoFZTN6zQmUrVoUpE3w1280.png"/>
 				</div>
 				<div class="basis-3/5">
-					<h2>Media Subteam </h2>
+					<h2 class="text-4xl mb-5 text-semibold">Media Subteam </h2>
 					<br/>
 					<p>
 						Photography and editing are key aspects of the media sub team. Media is a part of robotics that is non-technical. We take photos and videos of the progress of the robot and at competitions. Media is also in charge of editing videos and manipulating posters. Additionally, media creates the Chairman's video and the yearly recap videos, both represented below. All that is needed for this sub team is a camera and any editing software.    
@@ -24,63 +25,41 @@ import SubteamHeader from '../../components/SubteamHeader.astro';
 
 			<div class="p-1 border md:mt-10 bg-red-800"></div>
 			
-			<h2 class="my-5 text-center">2018 PHOTOS AND VIDEOS</h2>
-			<div class="grid grid-cols-4 grid-flow-row gap-4">
-				<div class="row-span-4 p-4 border rounded-lg md:mt-0 bg-red-800 md:border-0 text-white text-center">insert image</div>
-				<div class="row-span-4 p-4 border rounded-lg md:mt-0 bg-red-800 md:border-0 text-white text-center">insert image</div>
-				<div class="row-span-4 p-4 border rounded-lg md:mt-0 bg-red-800 md:border-0 text-white text-center">insert image</div>
-				<div class="row-span-4 p-4 border rounded-lg md:mt-0 bg-red-800 md:border-0 text-white text-center">insert image</div>
+			<h2 class="my-5 text-center text-3xl mb-5 text-semibold">2018 PHOTOS AND VIDEOS</h2>
+			<div class="grid grid-cols-3 grid-flow-row gap-3">
+				<Carousel img1 = {"https://cdn.discordapp.com/attachments/595730797147717634/1124846912940544110/image.png"} img2 = {"https://cdn.discordapp.com/attachments/595730797147717634/1124846999351603250/image.png"} img3 = {"https://cdn.discordapp.com/attachments/595730797147717634/1124847039767912468/image.png"}/>
+				<Carousel img1 = {"https://cdn.discordapp.com/attachments/595730797147717634/1124847432476414012/image.png"} img2 = {"https://cdn.discordapp.com/attachments/595730797147717634/1124847337722880001/image.png"} img3 = {"https://cdn.discordapp.com/attachments/595730797147717634/1124847375182209215/image.png"}/>
+				<Carousel img1 = {"https://cdn.discordapp.com/attachments/595730797147717634/1124846516109062246/image.png"} img2 = {"https://cdn.discordapp.com/attachments/595730797147717634/1124846568625930320/image.png"} img3 = {"https://cdn.discordapp.com/attachments/595730797147717634/1124846635021770853/image.png"}/>
+				
 				<!--
 					Insert images instead of numbers
 				-->
 
 				<div class="row-span-4 text-center">
-					<h2>Georgian Bay/ Barrie 2018</h2>
+					Georgian Bay/ Barrie 2018
 				</div>
 				<div class="row-span-4 text-center">
-					<h2>Southwest International 2018 </h2>
+					Southwest International 2018 
 				</div>
 				<div class="row-span-4 text-center">
-					<h2>North Bay 2018</h2>
+					North Bay 2018
 				</div>
-				<div class="row-span-4 text-center">
-					<h2>Fall Fiesta 2018</h2>
-				</div>
+
 			</div>
 			
 			<div class="p-1 border mt-10 mb-10 bg-red-800"></div>
 
-			<h2 class="text-left">2019 Photos and Videos</h2>
+			<h2 class="text-left text-3xl mb-5 text-semibold">2019 Photos and Videos</h2>
 			<div class="flex flex-row gap-10 mt-10 mb-20">
-				<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-white text-center">
-					insert image
-				</div>
-				<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-white text-center">
-					insert image
-				</div>
+				<Carousel img1 = {"https://cdn.discordapp.com/attachments/1122723830973075506/1124847688790331442/aKhO5dv3ZiONJxCywUzLZvNyigK6FJ0XLkWTEKmWey6v3z3s8yUdYmO-3Dp_fEaOCWq9G-1FpF7bBfRlFc6IlZnZeGAqmEvKmfXDZgKv-JDLPTDzw1280.png"} img2 = {"https://cdn.discordapp.com/attachments/595730797147717634/1124848145831055360/image.png"} img3 = {"https://cdn.discordapp.com/attachments/595730797147717634/1124848227649343588/image.png"}/>
+
+				
+			</div>
+			<div class="row-span-4 text-center text-semibold">
+				York University 2019
 			</div>
 
-			<div class="p-1 border mt-10 mb-10 bg-red-800"></div>
-				<h2 class="text-left">Previous Chairmans Video</h2>
-				<div class = "flex flex-row gap-10 mt-10 mb-20"> 
-					<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-white text-center">
-						insert image
-					</div>
-				</div>
-			<div class="p-1 border mt-10 mb-10 bg-red-800"></div>
-				<h2 class="text-left">2019 Recap Video</h2>
-				<div class = "flex flex-row gap-10 mt-10 mb-20"> 
-					<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-white text-center">
-						insert image
-					</div>
-				</div>
-			<div class="p-1 border mt-10 mb-10 bg-red-800"></div>
-				<h2 class="text-left">Editing</h2>
-				<div class = "flex flex-row gap-10 mt-10 mb-20"> 
-					<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-white text-center">
-						insert image
-					</div>
-				</div>
+		
 		</div>		
 	</main>
 </Layout>

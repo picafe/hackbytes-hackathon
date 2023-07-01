@@ -13,11 +13,11 @@ import Carousel from '../../components/Carousel.astro';
 			<div class="mt-20 mb-10">
 				<div class="flex flex-row gap-10">
 					<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-center text-white">
-						insert image
+						<img src = "https://cdn.discordapp.com/attachments/1122723830973075506/1124830665406427136/KSapPirZBfeA5XzLS93LvqELu93MKsGGbgHNDZjyDOl5xWMgQ9YKh9unNuczPVZEQjS73zUoJOADjixgQa8G0rLsrwWIBtMBGY-58r_fvJpas4iww1280.png"/>
 					</div>
 					<div class="basis-3/5">
-						<h2>Electrical Subteam </h2>
-						<br/>
+						<h2 class="text-xl mb-5 text-semibold">ELECTRICAL SUBTEAM </h2>
+						
 						<p>
 							The Electronics team takes the assembled robot and connects the various motors, pistons and any other vision or movement device to their respective controllers. We enable the robot to be controlled by our Drive Team, as well as autonomously during a match. We are responsible not only for designing, connecting, and troubleshooting the electrical and pneumatic components, but also for working together with the Build and Programming Teams to eventually build a fully functioning robot. 
 							<br/><br/>
@@ -29,21 +29,21 @@ import Carousel from '../../components/Carousel.astro';
 	
 				<div class="p-1 border md:mt-10 bg-red-800"></div>
 				
-				<h2 class="my-5 text-center">How To Get Started</h2>
+				<h2 class="my-5 text-center text-3xl mb-5 text-semibold">HOW TO GET STARTED</h2>
 				<p class = "my-5 text-center"> 
 					If you are interested in joining the electronics subteam, there are many different online resources you can use to get a head start. There will be workshops to help new members learn. We suggest checking these links below in your own time for a better understanding of the way FRC electronics works.
 				</p>
 				<div class="grid grid-cols-4 grid-flow-row gap-4">
-					<div class="row-span-4 p-4 border rounded-lg md:mt-0 bg-red-800 md:border-0 text-white text-center">insert image</div>
-					<div class="row-span-4 p-4 border rounded-lg md:mt-0 bg-red-800 md:border-0 text-white text-center">insert image</div>
-					<div class="row-span-4 p-4 border rounded-lg md:mt-0 bg-red-800 md:border-0 text-white text-center">insert image</div>
-					<div class="row-span-4 p-4 border rounded-lg md:mt-0 bg-red-800 md:border-0 text-white text-center">insert image</div>
+					<div class="row-span-4 p-4 border rounded-lg md:mt-0 bg-red-800 md:border-0 text-white text-center"> <a href = "https://drive.google.com/file/d/1EDPonK7Pc_Vf_9crYTMUXauCYa4-7a5h/view"> General Electrical System Notes </a> </div>
+					<div class="row-span-4 p-4 border rounded-lg md:mt-0 bg-red-800 md:border-0 text-white text-center"> <a href = "https://mililanirobotics.gitbooks.io/frc-electrical-bible/content/ "> Additional System notes </a> </div>
+					<div class="row-span-4 p-4 border rounded-lg md:mt-0 bg-red-800 md:border-0 text-white text-center"> <a href = "https://wpilib.screenstepslive.com/s/currentCS/m/kop/l/1030226-wiring-the-frc-control-system"> Wiring the FRC control system </a></div>
+					<div class="row-span-4 p-4 border rounded-lg md:mt-0 bg-red-800 md:border-0 text-white text-center"> <a href = "https://firstfrc.blob.core.windows.net/frc2017/pneumatics-manual.pdf"> FRC pneumatics guide </a></div>
 					<!--
 						Insert images instead of numbers
 					-->
 	
 					<div class="row-span-4 text-center">
-						<h2>General Electrical System Notes</h2>
+						<h2></h2>
 						<p>
 							The intent of this document is to teach you (the reader) enough to go and do your own
 							research and make your own informed decisions using the muscle between your ears
@@ -52,13 +52,13 @@ import Carousel from '../../components/Carousel.astro';
 						</p>
 					</div>
 					<div class="row-span-4 text-center">
-						<h2>Additional System notes </h2>
+						<h2> </h2>
 						<p>
 							Something to note is that we program in C++, so references to classes like “Encoder” and our sample codes are written in C++. However, classes are interchangeable in Java and C++, and there are topics covered in this guide that are not language-exclusive like the roboRIO and the Driver Station itself. We hope this is guide serves to be useful for you!
 						</p>
 					</div>
 					<div class="row-span-4 text-center">
-						<h2>Wiring the FRC control system</h2>
+						<h2></h2>
 						<p>
 							This document details the wiring of a basic electronics board for bench-top testing.
 
@@ -66,7 +66,7 @@ import Carousel from '../../components/Carousel.astro';
 						</p>
 					</div>
 					<div class="row-span-4 text-center">
-						<h2>FRC pneumatics guide</h2>
+						<h2></h2>
 						<p>
 							The FIRST Robotics Competition (FRC) pneumatic components are outlined in this document. It is being
 							provided as a courtesy, and therefore does not supersede any information or rules provided in the FIRST
@@ -78,11 +78,35 @@ import Carousel from '../../components/Carousel.astro';
 				<div class="p-1 border mt-10 mb-10 bg-red-800"></div>
 				
 				<!-- CAROUSEL TIME -->
-				<h2 class="text-left"> Main Components of Our System</h2>
-				<div class="flex flex-row gap-10 mt-10 mb-20">
-					<Carousel img1= {"../assets/NEO.jpg"} img2 ={"../assets/CIM-motor.jpg"} img3 ={"../assets/motor3.jpg"}/>
-					<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-white text-center">
-						insert image
+				<h2 class="text-left text-3xl mb-5 text-semibold"> MAIN COMPONENTS OF OUR SYSTEM</h2>
+				<div class="grid grid-cols-3 grid-flow-row gap-3">
+					<Carousel img1= {"https://cdn.discordapp.com/attachments/1122723830973075506/1124834198847492227/REV-21-1650-NEO1.png"} img2 ={"https://cdn.discordapp.com/attachments/1122723830973075506/1124834175611060254/217-2000-cim-motor.png"} img3 ={"https://cdn.discordapp.com/attachments/1122723830973075506/1124834087518093423/217-4347-rev2_1.png"}/>
+					<Carousel img1= {"https://cdn.discordapp.com/attachments/1122723830973075506/1124835305543970926/MAX_HERO-noflag__60247.png"} img2 ={"https://cdn.discordapp.com/attachments/1122723830973075506/1124835473777492099/detail.png"} img3 ={"https://cdn.discordapp.com/attachments/1122723830973075506/1124835586235170846/217-8080.png"}/>
+					<Carousel img1= {"https://cdn.discordapp.com/attachments/1122723830973075506/1124836294573424811/roborio.png"} img2 ={"https://cdn.discordapp.com/attachments/1122723830973075506/1124836535678795806/217-4244.png"} img3 ={"https://cdn.discordapp.com/attachments/1122723830973075506/1124836742403469312/images.png"}/>
+
+					<div class="row-span-4 text-center">
+						<h2></h2>
+						<p>
+							<b>Motors in order:</b>
+						</br> </br>
+							NEO Brushless, CIM, 775
+						</p>
+					</div>
+					<div class="row-span-4 text-center">
+						<h2></h2>
+						<p>
+							<b>Motor controllers in order: </b>
+						</br></br>
+							Spark Max, Spark, Victor SPX, Talon SRX,  
+						</p>
+					</div>
+					<div class="row-span-4 text-center">
+						<h2></h2>
+						<p>
+							<b>In order:</b>
+						</br></br>
+ 							roboRIO, PDP (power distribution panel)
+						</p>
 					</div>
 				</div>
 				
