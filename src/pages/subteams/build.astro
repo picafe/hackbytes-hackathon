@@ -5,13 +5,13 @@ import SubteamHeader from '../../components/SubteamHeader.astro';
 import Nav from '../../components/Nav.astro';
 ---
 
-<Layout title="Build">
+<Layout title="Design and CAD">
 	<main class="max-w-none">
 		<SubteamHeader 
-			title= {"Build"} 
-			image= {"https://cdn.discordapp.com/attachments/1122723830973075506/1124438470681706546/hgWG7-BFMNg9TCZwDlh0FHpiLvLoFd4jfgLIOQ3gJMwsSwKclRAADDTpsUBQpN65wiV-GAw16383.png"}
+		title= {"Design and CAD"} 
+		image= {"https://cdn.discordapp.com/attachments/1122723830973075506/1124438470681706546/hgWG7-BFMNg9TCZwDlh0FHpiLvLoFd4jfgLIOQ3gJMwsSwKclRAADDTpsUBQpN65wiV-GAw16383.png"}
 		/>
-
+		
 		<div class="max-w-6xl my-20 mx-auto">
 			<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-white">
 				<div class="flex flex-row gap-7">
@@ -19,17 +19,15 @@ import Nav from '../../components/Nav.astro';
 						insert image
 					</div>
 					<div class="basis-3/5">
-						<h2>Build Subteam</h2>
+						<h2>What's Design and CAD?</h2>
 						<p>
-							The build subteam is responsible for manufacturing and assembling the parts of the robot. This subteam takes the CAD models and created by the Design and CAD subteam and fabricates them using a variety of tools. Build members will be taught how to operate all tools safely and effectively with the various materials that we use such as plexiglass and aluminum. 					</p>
+							CAD or Computer Aided-Design is a software that allows us to design the entire robot with everything including the smallest items (bolts, nuts, washers, etc). We use CAD as a tool to communicate design ideas and details, once everything is fully planned and designed, the CAD is used as a blueprint. 
 						</p>
 					</div>
 				</div>
 			</div>
-
-			<div class="p-1 border md:mt-10 bg-red-800"></div>
-			
-			<h2 class="my-10 text-center">How We Manufacture Parts</h2>
+	
+			<h2 class="my-10 text-center">Our Design Process</h2>
 			<div class="flex flex-row gap-4">
 				<div class="basis-1/3 p-4 border rounded-lg md:mt-0 md:border-0 bg-white">
 					<div class="flex flex-col gap-4">
@@ -37,9 +35,9 @@ import Nav from '../../components/Nav.astro';
 							insert image
 						</div>
 						<div class="text-center">
-							<h2>Power Tools</h2>
+							<h2>Identify Possible Solutions</h2>
 							<p>
-								The majority of all parts that go onto the robot are machined in house using various power tools such as drills, bandsaws, and drill presses. Every build member will be trained to operate these tools safely and effectively.
+								Many technical challenges we encounter have more that one possible solutions. Brainstorming as many solutions while considering their pros and cons provides a large pool of ideas to create a solution from.
 							</p>
 						</div>
 					</div>
@@ -51,9 +49,9 @@ import Nav from '../../components/Nav.astro';
 							insert image
 						</div>
 						<div class="text-center">
-							<h2>CNC Machine</h2>
+							<h2>Prototype and CAD</h2>
 							<p>
-								For parts that require accuracy and precision, we use the CNC, a machine that uses programmed instructions to control and automate machining processes. We use the CNC primarily for polycarbonate parts such as gussets.
+								All solutions have a technical aspect, usually mechanical, that should be constructed and tested in order to figure out specifics (optimal dimensions/potential issues). Computer aided-design (CAD) is an integral part of the design process as it provides a means for communicating ideas visually and figuring out dimensions in a 3D space.
 							</p>
 						</div>
 					</div>
@@ -65,25 +63,45 @@ import Nav from '../../components/Nav.astro';
 							insert image
 						</div>
 						<div class="text-center">
-							<h2>3D-Printing</h2>
+							<h2>Reiterate</h2>
 							<p>
-								3D printing technology is used to create small, precise shapes. We use 3D printed parts primarily for pulleys and other non load bearing pieces of the robot.
+								Every mechanical system has room for improvement. Reiteration may include a redesign and rebuild or minor additions to improve the performance of the system. Prototyping and CAD may be required for reiteration (this step repeats indefinitely).
 							</p>
 						</div>
+					</div>
+				</div>
+			</div>	
+	
+			<div class="basis-3/5 p-4 border rounded-lg md:my-10 md:border-0 bg-white">
+				<div class="flex flex-row gap-7">
+					<div class="basis-3/5">
+						<h2>How to Get Started</h2>
+						<p>
+							Similar to programming, learning to use Inventor (CAD software) requires plenty of self learning in order to use. We host workshops to get you started however, we suggest that you try to design somethings individually so you can further understand the features.
+						</p>
+					</div>
+					<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-center text-white">
+						insert image
 					</div>
 				</div>
 			</div>
-			
-			<div class="p-1 border mt-10 mb-10 bg-red-800"></div>
-
-			<h2 class="text-center">Resources</h2>
-			<div class="flex flex-row gap-4 mt-10 mb-20">
-				<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-white text-center">
-					insert image
-				</div>
-				<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-white text-center">
-					insert image
-				</div>
+	
+			<h2 class="basis-1/3 p-4 border rounded-lg md:mt-0 mb-5 md:border-0 bg-white text-center">CAD Software - Autodesk Inventor</h2>
+			<div>
+				<p class="mb-4">
+					There are many other CAD softwares including Onshape, Solidworks, Fusion360, Blendr and Autodesk AutoCAD, we use Autodesk Inventor because it can be downloaded for free with your student email and is created for designing mechanical systems. Inventory uses a parts and assembly file system, where all components (screws, nuts, motors) are designed in separate files and assembled virtually in an assembly file.
+				</p>
+				<p>To install Inventor:</p>
+				<p class="mb-4">
+					Autodesk has changed their educational account policy, you are now required to upload a digital copy of a document that includes your name, the name of our school, and the date to get a free account. Transcripts and valid school IDs are acceptable. If you do not have documents that include the required information, please fill out this 
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLSffGxr61amJ_CBsra2k7mT3bzriRrHiYHOU8NV4Li2AxSM9Mg/viewform">form</a>. 
+					We are able to provide you a letter from the school that you can use for an educational Autodesk account. Please use your TDSB school email to make the account.
+				</p>
+				<p>
+					Once you have your educational account, go to Autodesk.com/first or 
+						<a href="https://www.autodesk.com/education/edu-software/overview?sorting=featured&filters=individual">click here</a>,
+						and click the "Get started" link on the Inventor Professional widget. Follow their downloading procedure and download the 2022 version of Inventor professional.
+				</p>
 			</div>
 		</div>		
 	</main>
