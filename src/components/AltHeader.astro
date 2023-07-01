@@ -1,0 +1,40 @@
+---
+export interface Props {
+	title: string;
+    bgGradient: string;
+    subtitle: string;
+	image: string | undefined;
+}
+
+const { title, bgGradient, subtitle, image } = Astro.props;
+---
+<script define:vars={{ image }}>
+    document.body.style.setProperty('--hero-img', 'url(' + image + ')');
+</script>
+
+<header>
+    <div class="container flex max-w-none bg-image p-5">
+        <div class="ml-10">
+            <h1 class="md:text-8xl text-5xl text-white font-semibold text-left mt-32 mb-6">
+                 <span class="text-gradient"> {title} <span>
+            </h1>
+            <h2 class="text-white opacity-50 text-3xl md:text-5xl">
+                { subtitle }
+            </h2>
+            
+        </div>
+        <div class="">
+            <img class="w-5/6 h-5/6 mt-6 ml-20 rounded-xl"src={image}>
+        </div>
+        
+    </div>
+</header>
+
+<style define:vars={{ bgGradient }}>
+    .bg-image {
+        height: 32rem;
+        background-image: var(--bgGradient);
+        background-size: cover;
+    }
+
+</style>
