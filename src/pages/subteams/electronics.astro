@@ -5,10 +5,95 @@ import SubteamHeader from '../../components/SubteamHeader.astro';
 ---
 
 <Layout title="Electronics">
-	<main>
 		<SubteamHeader title= {"Electronics"} image= {"https://cdn.discordapp.com/attachments/1122723830973075506/1124438470681706546/hgWG7-BFMNg9TCZwDlh0FHpiLvLoFd4jfgLIOQ3gJMwsSwKclRAADDTpsUBQpN65wiV-GAw16383.png"}/>
-		<h1>Electronics</h1> 
-		
-	</main>
+		<!-- <h1>Electronics</h1> -->
+
+		<main class="max-w-6xl my-auto mx-auto">
+			<div class="mt-20 mb-10">
+				<div class="flex flex-row gap-10">
+					<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-center text-white">
+						insert image
+					</div>
+					<div class="basis-3/5">
+						<h2>Electrical Subteam </h2>
+						<br/>
+						<p>
+							The Electronics team takes the assembled robot and connects the various motors, pistons and any other vision or movement device to their respective controllers. We enable the robot to be controlled by our Drive Team, as well as autonomously during a match. We are responsible not only for designing, connecting, and troubleshooting the electrical and pneumatic components, but also for working together with the Build and Programming Teams to eventually build a fully functioning robot. 
+							<br/><br/>
+							Members don't need any prerequisite knowledge in electronics as we will provide you with resources and workshops for you to learn the necessary skills, but enthusiam and willingness to learn are important characteristics. 
+					
+						</p>
+					</div>
+				</div>
+	
+				<div class="p-1 border md:mt-10 bg-red-800"></div>
+				
+				<h2 class="my-5 text-center">How To Get Started</h2>
+				<p class = "my-5 text-center"> 
+					If you are interested in joining the electronics subteam, there are many different online resources you can use to get a head start. There will be workshops to help new members learn. We suggest checking these links below in your own time for a better understanding of the way FRC electronics works.
+				</p>
+				<div class="grid grid-cols-4 grid-flow-row gap-4">
+					<div class="row-span-4 p-4 border rounded-lg md:mt-0 bg-red-800 md:border-0 text-white text-center">insert image</div>
+					<div class="row-span-4 p-4 border rounded-lg md:mt-0 bg-red-800 md:border-0 text-white text-center">insert image</div>
+					<div class="row-span-4 p-4 border rounded-lg md:mt-0 bg-red-800 md:border-0 text-white text-center">insert image</div>
+					<div class="row-span-4 p-4 border rounded-lg md:mt-0 bg-red-800 md:border-0 text-white text-center">insert image</div>
+					<!--
+						Insert images instead of numbers
+					-->
+	
+					<div class="row-span-4 text-center">
+						<h2>General Electrical System Notes</h2>
+						<p>
+							The intent of this document is to teach you (the reader) enough to go and do your own
+							research and make your own informed decisions using the muscle between your ears
+							about motors and their use in FRC. It is not an end-all-be-all but hopefully will introduce
+							you to the tools we’ll be using throughout and teach you to use them yourself.
+						</p>
+					</div>
+					<div class="row-span-4 text-center">
+						<h2>Additional System notes </h2>
+						<p>
+							Something to note is that we program in C++, so references to classes like “Encoder” and our sample codes are written in C++. However, classes are interchangeable in Java and C++, and there are topics covered in this guide that are not language-exclusive like the roboRIO and the Driver Station itself. We hope this is guide serves to be useful for you!
+						</p>
+					</div>
+					<div class="row-span-4 text-center">
+						<h2>Wiring the FRC control system</h2>
+						<p>
+							This document details the wiring of a basic electronics board for bench-top testing.
+
+							Some images shown in this section reflect the setup for a Robot Control System using Spark motor controllers. Wiring diagram and layout should be similar for other motor controllers. Where appropriate, a second set of images shows the wiring steps for using PWM controllers with integrated wires.
+						</p>
+					</div>
+					<div class="row-span-4 text-center">
+						<h2>FRC pneumatics guide</h2>
+						<p>
+							The FIRST Robotics Competition (FRC) pneumatic components are outlined in this document. It is being
+							provided as a courtesy, and therefore does not supersede any information or rules provided in the FIRST
+							Robotics Competition Manual. 
+						</p>
+					</div>
+				</div>
+				
+				<div class="p-1 border mt-10 mb-10 bg-red-800"></div>
+	
+				<h2 class="text-left"> Main Components of Our System</h2>
+				<div class="flex flex-row gap-10 mt-10 mb-20">
+					<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-white text-center">
+						insert image
+					</div>
+					<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-white text-center">
+						insert image
+					</div>
+				</div>
+			</div>		
+		</main>
+
 </Layout>
 
+<style>
+
+.h2{
+	font-weight: bold;
+}
+ 
+</style>
