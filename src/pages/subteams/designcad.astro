@@ -4,8 +4,81 @@ import Card from '../../components/Card.astro';
 ---
 
 <Layout title="Design and CAD">
-	<main>
-		<h1>Design and CAD</h1>
-		
+	<h1 class="md:text-8xl text-6xl text-white font-bold text-center underline underline-offset-8 decoration-red-800 mt-32">
+		Design and CAD
+	</h1>
+	<main class="max-w-6xl my-auto mx-auto">
+		<div class="mt-20 mb-10">
+			<div class="flex flex-row gap-10">
+				<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-white text-center">
+					insert image
+				</div>
+				<div class="basis-3/5">
+					<h2>What's Design and CAD?</h2>
+					<p>
+						CAD or Computer Aided-Design is a software that allows us to design the entire robot with everything including the smallest items (bolts, nuts, washers, etc). We use CAD as a tool to communicate design ideas and details, once everything is fully planned and designed, the CAD is used as a blueprint. 
+					</p>
+				</div>
+			</div>
+	
+			<h2 class="my-10 text-center">Our Design Process</h2>
+			<div class="grid grid-cols-3 grid-flow-row gap-4">
+				<div class="row-span-4 p-4 border rounded-lg md:mt-0 md:border-0 bg-white text-center">insert image</div>
+				<div class="row-span-4 p-4 border rounded-lg md:mt-0 md:border-0 bg-white text-center">insert image</div>
+				<div class="row-span-4 p-4 border rounded-lg md:mt-0 md:border-0 bg-white text-center">insert image</div>
+				<!--
+					Insert images instead of numbers
+				-->
+	
+				<div class="row-span-4 text-center">
+					<h2>Identify Possible Solutions</h2>
+					<p>
+						Many technical challenges we encounter have more that one possible solutions. Brainstorming as many solutions while considering their pros and cons provides a large pool of ideas to create a solution from.
+					</p>
+				</div>
+				<div class="row-span-4 text-center">
+					<h2>Prototype and CAD</h2>
+					<p>
+						All solutions have a technical aspect, usually mechanical, that should be constructed and tested in order to figure out specifics (optimal dimensions/potential issues). Computer aided-design (CAD) is an integral part of the design process as it provides a means for communicating ideas visually and figuring out dimensions in a 3D space.
+					</p>
+				</div>
+				<div class="row-span-4 text-center">
+					<h2>Reiterate</h2>
+					<p>
+						Every mechanical system has room for improvement. Reiteration may include a redesign and rebuild or minor additions to improve the performance of the system. Prototyping and CAD may be required for reiteration (this step repeats indefinitely).
+					</p>
+				</div>
+			</div>
+	
+			<div class="flex flex-row gap-10 my-20">
+				<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-white text-center">
+					insert image
+				</div>
+				<div class="basis-3/5">
+					<h2>How to Get Started</h2>
+					<p>
+						Similar to programming, learning to use Inventor (CAD software) requires plenty of self learning in order to use. We host workshops to get you started however, we suggest that you try to design somethings individually so you can further understand the features.
+					</p>
+				</div>
+			</div>
+	
+			<h2 class="text-center">CAD Software - Autodesk Inventor</h2>
+			<div>
+				<p class="mb-4">
+					There are many other CAD softwares including Onshape, Solidworks, Fusion360, Blendr and Autodesk AutoCAD, we use Autodesk Inventor because it can be downloaded for free with your student email and is created for designing mechanical systems. Inventory uses a parts and assembly file system, where all components (screws, nuts, motors) are designed in separate files and assembled virtually in an assembly file.
+				</p>
+				<p>To install Inventor:</p>
+				<p class="mb-4">
+					Autodesk has changed their educational account policy, you are now required to upload a digital copy of a document that includes your name, the name of our school, and the date to get a free account. Transcripts and valid school IDs are acceptable. If you do not have documents that include the required information, please fill out this 
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLSffGxr61amJ_CBsra2k7mT3bzriRrHiYHOU8NV4Li2AxSM9Mg/viewform">form</a>. 
+					We are able to provide you a letter from the school that you can use for an educational Autodesk account. Please use your TDSB school email to make the account.
+				</p>
+				<p>
+					Once you have your educational account, go to Autodesk.com/first or 
+						<a href="https://www.autodesk.com/education/edu-software/overview?sorting=featured&filters=individual">click here</a>
+					, and click the "Get started" link on the Inventor Professional widget. Follow their downloading procedure and download the 2022 version of Inventor professional.
+				</p>
+			</div>
+		</div>		
 	</main>
 </Layout>
