@@ -1,11 +1,92 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Card from '../../components/Card.astro';
+import SubteamHeader from '../../components/SubteamHeader.astro';
+import Nav from '../../components/Nav.astro';
 ---
 
-<Layout title="Design and CAD">
-	<main>
-		<h1>Scouting</h1>
-		
+<Layout title="Scouting">
+	<main class="max-w-none">
+		<SubteamHeader 
+			title= {"Scouting"} 
+			image= {"https://cdn.discordapp.com/attachments/1122723830973075506/1124438470681706546/hgWG7-BFMNg9TCZwDlh0FHpiLvLoFd4jfgLIOQ3gJMwsSwKclRAADDTpsUBQpN65wiV-GAw16383.png"}
+		/>
+
+		<div class="max-w-6xl my-20 mx-auto">
+			<h1>Strategy at Team 4914</h1>
+			<h2 class="my-4">An Introduction to Our Scouting and Strategy Sub-Team:</h2>
+
+			<h2>What is Scouting and Strategy?</h2>
+			<div class="basis-3/5 p-4 border rounded-lg md:mt-0 mb-10 md:border-0 bg-white">
+				<div class="flex flex-row gap-7">
+					<div class="basis-3/5">
+						<p class="mb-4">
+							Scouting is a sub team that evaluates the performance of other FRC team's robots. It is extremely essential for Alliance Selection and for match strategy. At the end of the series of qualification matches, there is a process called "Alliance Selection" where the top teams form their own alliances for the playoff matches by asking other teams to join their alliance. Scouting is important during this process because the top teams need to select other teams who can significantly contribute to an alliance's overall game plan. 
+						</p>
+						<p>
+							Strategy is also an essential part of this sub-team and it involves evaluating past games and real-time competition data in order to create winning game plans. With regards to match strategy, a team has a greater chance of winning if they know the strengths and weaknesses of their own robot, their alliance partner's robots and their opponents robots. This information regarding what teams excel at and about what teams are weak at can be easier obtained with scouting.
+						</p>
+					</div>
+					<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-center text-white">
+						insert image
+					</div>
+				</div>
+			</div>
+
+			<h2 class="text-right">Scouting and Strategy at VPCI Robotics</h2>
+			<div class="basis-3/5 p-4 border rounded-lg md:mt-0 mb-10 md:border-0 bg-white">
+				<div class="flex flex-row gap-7">
+					<div class="flex flex-col gap-7 basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-center text-white">
+						<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-center text-white">
+							insert caption and image
+						</div>
+						<div class="basis-3/5 p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-center text-white">
+							insert caption and image
+						</div>
+					</div>
+					<div class="basis-3/5 text-right">
+						<p class="mb-4">
+							At Team 4914, in order to successfully select other teams to form an alliance, we first collect competition data about the performance of team's other robots during qualification matches with scouting. For each robotics competition that we attend, we divide scouting into two distinct groups: match scouting and pit scouting. Match scouting is when each member focuses on one robot and records data about that specific team's robot during qualification matches. On the other hand, pit scouting is when members collect data for other team's robots that may not be easily obtained by just watching a qualification match. Some information that can be important to obtain during pit scouting includes the drive train type (number of wheels, type of wheels, motors), different functionalities (various scoring methods, end game capabilities, defense) and robot issues during matches (electrical issues, the loss of communication in the driver's station, weak mechanical structural parts).</p>
+						<p>
+							We have divided scouting into two groups because this allows us to collect theoretical data as well as real-time competition data about the other team's robots for the Alliance Selection process. After collecting data regarding different teams, we would quantify and analyze the competition data that we collected in order to choose the teams who can greatly contribute to our alliance's strategy. Depending on the tasks that our team performs best at, we would select teams who can effectively complete other tasks so that our alliance can maximize the total number of points that we score.						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex flex-row gap-10">
+				<div class="basis-1/3 p-4 border rounded-lg md:mt-0 mb-10 md:border-0 bg-white">
+					Example Situations When Scouting Data Helps With Strategy:
+				</div>
+				<div>
+					<p class="mb-4">
+						Example Situation 1: During the 2019 First Robotics Competition game (Destination: Deep Space), if our robot 's cycle speed for cargo is greater than our robot's cycle speed for hatches, for instance, we would consider selecting a team's robot that can cycle hatches fast rather than a team's robot that can cycle cargo fast.
+					</p>
+					<p>
+						Example Situation 2:  If we are willing to select a team's robot who specializes in defense, we would strongly consider what the team's the drive train is and how strong their mechanical structure is.
+					</p>
+				</div>
+			</div>
+
+			<div class="flex flex-row gap-10 mb-10">
+				<div class="basis-1/2 p-4 border rounded-lg md:mt-0 mb-10 md:border-0 bg-white">
+					How to Get Started
+				</div>
+				<div>
+					To join the scouting and strategy sub-team, you need to know the game rules very well. It is crucial that you are familiar with the rules and scoring sections of the FRC game manual that is released at the beginning of a competition season. We will host workshops regarding scouting and strategy to help you get started. After these workshops, we strongly recommend that you practice scouting with past games that are online. A website that has past games is: https://www.thebluealliance.com/
+				</div>
+			</div>
+
+			<div>
+				<h1>Our 2019 Competition Scouting Sheets</h1>
+				<h2>Our Match Scouting Sheets For the 2019 First Robotics Competition Game:</h2>
+				<div class="p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-white text-center mb-5">
+					insert image
+				</div>
+				<h2>Our Pits Scouting Sheets For the 2019 First Robotics Competition Game:</h2>
+				<div class="p-4 border rounded-lg md:mt-0 md:border-0 bg-red-800 text-white text-center mb-5">
+					insert image
+				</div>
+			</div>
+		</div>		
 	</main>
 </Layout>
