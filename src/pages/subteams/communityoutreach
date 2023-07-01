@@ -1,0 +1,75 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AltHeader from '../components/AltHeader.astro';
+---
+
+<Layout title="Community Outreach">
+    
+	<main class="max-w-none">
+        <AltHeader 
+            title="Community Outreach" 
+            bgGradient="linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%)" 
+            subtitle="" 
+            image="https://cdn.discordapp.com/attachments/1122723830973075506/1124438470681706546/hgWG7-BFMNg9TCZwDlh0FHpiLvLoFd4jfgLIOQ3gJMwsSwKclRAADDTpsUBQpN65wiV-GAw16383.png"
+        />
+		<div>
+            <div class="max-w-6xl mx-auto my-20 text-center">
+                <div class="mb-10">
+                    <h1 class="text-3xl mb-5 font-semibold">OUTREACH</h1>
+                    <p>
+                        Outreach is our way of extending STEM into the community, with the hope of inspiring of inspiring a wave of novice engineers and creators through shock and awe tactics by providing interactive and eye-catching demonstrations, events and activities, or by making STEM more accessible and approachable. Alongside that, we aim to provide support and opportunities to close members of our community and lend a helping hand whenever possible. 
+                    </p>
+                </div>
+                <a href="mailto: frcteam4914@gmail.com">
+                    <div class="max-w-6xl p-4 w-1/3 my-100 mx-auto border rounded-lg md:mt-0 bg-white hover:bg-gray-800 hover:text-white">
+                        Contact Us
+                    </div>
+                </a>
+            </div>
+            <div class="flex flex-row p-4 border md:mt-0 md:border-0 bg-red-800 text-white gap-4">
+                <div class="basis-5/12 max-w-6xl my-20 ml-auto">
+                    <h1 class="text-3xl mb-5 font-semibold">Scratch Outreach Initiative</h1>
+                    <p>
+                        In May of 2021, team members taught elementary students how to block code using Scratch via zoom to increase interest for coding in young minds. Weekly 75 minute sessions occurred for 3 consecutive weeks, with the main objective being "how to create a game". Team 4914 members spent months developing lessons and reaching out to elementary schools. 
+                    </p>
+                </div>
+                <div class="max-w-6xl mr-auto my-10 basis-1/6 p-4 border rounded-lg md:border-0 bg-white text-black">
+                    insert image
+                </div>
+            </div>
+            <div class="flex flex-row max-w-6xl my-20 mx-auto gap-10">
+                <div class="max-w-6xl mx-auto basis-1/3 p-4 border rounded-lg md:border-0 bg-red-800 text-white">
+                    <img src="https://i.ytimg.com/vi/_5mmcfukc44/maxresdefault.jpg">
+                </div>
+                <div class="basis-7/12 max-w-6xl my-10 mx-auto">
+                    <h1 class="text-3xl mb-5 font-semibold">First Tech Challenge</h1>
+                    <p>
+                        Team 4914 started a FTC team in 2019, in order to help new members to familiarize themselves with our robotics programs by providing a lower intensity version of a similar competition to FRC. Unfortunately, we are not running FTC this year (2022).
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-row p-4 border md:mt-0 md:border-0 bg-red-800 text-white gap-7">
+                <div class="basis-5/12 max-w-6xl my-20 ml-auto">
+                    <h1 class="text-3xl mb-5 font-semibold">NXT Workshops</h1>
+                    <p>
+                        Team 4914 hosts NXT workshops at libraries, open to children from 7-13. The workshops consisted of lessons on how to build, code & create their own NXT robots, to excite kids in our community about robotics. Unfortunately, all in-person workshops are cancelled due to COVID-19. 
+                    </p>
+                </div>
+                <div class="max-w-6xl mr-auto my-10 basis-1/6 p-4 border rounded-lg md:border-0 bg-white text-black">
+                    <img src="https://www.researchgate.net/profile/David-Butterworth-3/publication/327903430/figure/fig1/AS:675295577243648@1538014420032/4-DOF-Robot-Arm-using-2-Mindstorms-NXT-Bricks_Q320.jpg">
+                </div>
+            </div>
+            <div class="flex flex-row max-w-6xl my-20 mx-auto gap-10">
+                <div class="max-w-6xl mx-auto basis-1/3 p-4 border rounded-lg md:border-0 bg-red-800 text-white">
+                    <img src="https://www.firstinspires.org/sites/default/files/uploads/hero_headers/header-image.jpg">
+                </div>
+                <div class="basis-7/12 max-w-6xl my-10 mx-auto">
+                    <h1 class="text-3xl mb-5 font-semibold">FLL Mentoring</h1>
+                    <p>
+                        Starting from hosting First Lego League qualifiers & having a practice field, now select Team 4914 members travel to other teams, where they mentor & provide their expertise to help encourage STEM in people from a young age. Unfortunately, all in-person workshops are cancelled due to COVID-19.
+                    </p>
+                </div>
+            </div>
+		</div>		
+	</main>
+</Layout>
