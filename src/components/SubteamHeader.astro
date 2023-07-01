@@ -6,6 +6,9 @@ export interface Props {
 
 const { title, image } = Astro.props;
 ---
+<script define:vars={{ image }}>
+    document.body.style.setProperty('--bg-img', 'url(' + image + ')');
+</script>
 
 <header>
     <div class="container max-w-none bg-image p-5">
@@ -20,7 +23,7 @@ const { title, image } = Astro.props;
 <style>
     .bg-image {
         height: 32rem;
-        background-image: url({image});
+        background-image: var(--bg-img);
         background-size: cover;
     }
 
